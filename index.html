@@ -10,23 +10,22 @@
 </head>
 <body>
     <h1>Jogo do Galo</h1>
-    
+    <div class="buttonng"><button class="newgame">New Game</button></div>
     <div class="tabuleiro">
-        <button class="newgame">New Game</button>
         <div class="row">
             <div class="cel nobordertop noborderleft" onclick="jogada(this)"></div> 
-            <div class="cel" onclick="jogada(this)"></div>
-            <div class="cel" onclick="jogada(this)"></div>
+            <div class="cel nobordertop" onclick="jogada(this)"></div>
+            <div class="cel nobordertop noborderright" onclick="jogada(this)"></div>
         </div>
         <div class="row">
+            <div class="cel noborderleft" onclick="jogada(this)"></div>
             <div class="cel" onclick="jogada(this)"></div>
-            <div class="cel" onclick="jogada(this)"></div>
-            <div class="cel" onclick="jogada(this)"></div>
+            <div class="cel noborderright" onclick="jogada(this)"></div>
         </div>
         <div class="row">
-            <div class="cel" onclick="jogada(this)"></div>
-            <div class="cel" onclick="jogada(this)"></div>
-            <div class="cel" onclick="jogada(this)"></div>
+            <div class="cel noborderleft noborderbottom" onclick="jogada(this)"></div>
+            <div class="cel noborderbottom" onclick="jogada(this)"></div>
+            <div class="cel noborderright noborderbottom" onclick="jogada(this)"></div>
         </div>
         
     </div>
