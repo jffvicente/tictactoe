@@ -1,6 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tabuleiro .row .nobordertop {
+    border-top: hidden;
+    padding-top: 3px;
+}
+
+.tabuleiro .row .noborderleft {
+    border-left: hidden;
+    padding-left: 3px;
+}
+
+.tabuleiro .row .noborderright {
+    border-right: hidden;
+    padding-right: 3px;
+}
+
+.tabuleiro .row .noborderbottom {
+    border-bottom: hidden;
+    padding-bottom: 3px;
 }
 
 .tabuleiro > div > div {
@@ -13,6 +36,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 
 .row{
@@ -21,6 +45,15 @@ h1 {
 
 .cel:hover {
    background-color: rgb(192, 81, 118); 
+}
+
+.cel {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    
+
 }
 
 .newgame {
@@ -32,7 +65,10 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.buttonng {
+   text-align: center;
 }
