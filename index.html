@@ -11,21 +11,27 @@
 <body>
     <h1>Jogo do Galo</h1>
     <div class="buttonng"><button class="newgame">New Game</button></div>
+<div class="nomesjog">
+    <label for="nome1"><h4>Digite o nome do Jogador 1 (X)</h4></label>
+    <input type="text" name="jogador1"/>
+    <label for="nome2"><h4>Digite o nome do Jogador 2 (O)</h4></label>
+    <input type="text" name="jogador2"/>
+</div>
     <div class="tabuleiro">
         <div class="row">
-            <div class="cel nobordertop noborderleft" onclick="jogada(this)"></div> 
-            <div class="cel nobordertop" onclick="jogada(this)"></div>
-            <div class="cel nobordertop noborderright" onclick="jogada(this)"></div>
+            <div class="cel nobordertop noborderleft" onclick="jogada(this,0)"></div> 
+            <div class="cel nobordertop" onclick="jogada(this,1)"></div>
+            <div class="cel nobordertop noborderright" onclick="jogada(this,2)"></div>
         </div>
         <div class="row">
-            <div class="cel noborderleft" onclick="jogada(this)"></div>
-            <div class="cel" onclick="jogada(this)"></div>
-            <div class="cel noborderright" onclick="jogada(this)"></div>
+            <div class="cel noborderleft" onclick="jogada(this,3)"></div>
+            <div class="cel" onclick="jogada(this,4)"></div>
+            <div class="cel noborderright" onclick="jogada(this,5)"></div>
         </div>
         <div class="row">
-            <div class="cel noborderleft noborderbottom" onclick="jogada(this)"></div>
-            <div class="cel noborderbottom" onclick="jogada(this)"></div>
-            <div class="cel noborderright noborderbottom" onclick="jogada(this)"></div>
+            <div class="cel noborderleft noborderbottom" onclick="jogada(this,6)"></div>
+            <div class="cel noborderbottom" onclick="jogada(this,7)"></div>
+            <div class="cel noborderright noborderbottom" onclick="jogada(this,8)"></div>
         </div>
         
     </div>
